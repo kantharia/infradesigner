@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: var(--font-ui);
+  background: var(--surface-0);
+  color: var(--text-primary);
+}
+
+input::placeholder {
+  color: var(--text-muted);
+}
+
+.react-flow {
+  background: var(--canvas-bg);
+}
+
+.infra-group:hover {
+  border-color: var(--node-border-hover);
+}
+
+.react-flow__node-infraGroup {
+  overflow: visible;
+}
+
+.infra-handle {
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  z-index: 12;
+  background: var(--accent);
+  border: 1px solid var(--surface-border);
+  transition: opacity var(--transition-fast);
+}
+
+.infra-handle-in {
+  background: var(--surface-1);
+  border: 2px solid var(--accent);
+}
+
+.infra-handle-in-top {
+  top: 12px !important;
+  bottom: auto !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.infra-handle-in-right {
+  right: 12px !important;
+  left: auto !important;
+  top: 50% !important;
+  bottom: auto !important;
+  transform: translate(50%, -50%) !important;
+}
+
+.infra-handle-in-bottom {
+  bottom: 12px !important;
+  top: auto !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translate(-50%, 50%) !important;
+}
+
+.infra-handle-in-left {
+  left: 12px !important;
+  right: auto !important;
+  top: 50% !important;
+  bottom: auto !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.infra-node:hover .infra-handle,
+.infra-node.selected .infra-handle,
+.infra-group:hover .infra-handle,
+.infra-group.selected .infra-handle {
+  opacity: 1;
+}
+
+.react-flow__controls {
+  box-shadow: none;
+  border: 1px solid var(--surface-border);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.react-flow__controls-button {
+  background: var(--surface-1) !important;
+  border-bottom: 1px solid var(--surface-border) !important;
+  fill: var(--text-secondary) !important;
+}
+
+.react-flow__controls-button:hover {
+  background: var(--surface-3) !important;
+}
+
+.react-flow__minimap {
+  background: var(--surface-1) !important;
+  border: 1px solid var(--surface-border) !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__edgelabel-renderer {
+  z-index: 20;
+  pointer-events: none;
+}
+
+.infra-edge-chip {
+  pointer-events: all;
+  z-index: 21;
+  white-space: nowrap;
+}
+
+body.infra-exporting .react-flow__handle,
+body.infra-exporting .infra-handle,
+body.infra-exporting .react-flow__resize-control,
+body.infra-exporting .react-flow__nodesselection,
+body.infra-exporting .react-flow__controls,
+body.infra-exporting .react-flow__minimap,
+body.infra-exporting .react-flow__attribution {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@keyframes edge-flow {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}

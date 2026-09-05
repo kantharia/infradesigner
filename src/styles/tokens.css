@@ -1,0 +1,100 @@
+:root,
+[data-theme='light'] {
+  --canvas-bg:          #f3f5fa;
+  --canvas-dot:         #cfd6e6;
+  --canvas-grid-size:   24px;
+
+  --surface-0:          #eef1f7;
+  --surface-1:          #ffffff;
+  --surface-2:          #f4f6fb;
+  --surface-3:          #e8ecf4;
+  --surface-border:     #d4dbe8;
+
+  --text-primary:       #1a2030;
+  --text-secondary:     #5c667a;
+  --text-muted:         #8b93a7;
+
+  --accent:             #3b7dee;
+  --accent-dim:         rgba(59, 125, 238, 0.12);
+
+  --cat-networking:     #3b7dee;
+  --cat-compute:        #7c6cf0;
+  --cat-application:    #12b981;
+  --cat-data:           #ea7a2a;
+  --cat-security:       #e05656;
+  --cat-observability:  #c9a227;
+  --cat-custom:         #64748b;
+
+  --node-bg:            #ffffff;
+  --node-border:        #d4dbe8;
+  --node-border-hover:  #3b7dee;
+  --node-border-selected: #3b7dee;
+  --node-shadow-selected: 0 0 0 2px rgba(59, 125, 238, 0.35);
+  --node-radius:        8px;
+
+  --edge-color:         #a3acbb;
+  --edge-color-hover:   #3b7dee;
+  --edge-animated:      #3b7dee;
+  --edge-sync:          #0f9d8e;
+  --edge-sync-hover:    #0b7f73;
+
+  --minimap-mask:       rgba(238, 241, 247, 0.7);
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+
+  --font-ui:   'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 13px;
+  --text-md:   14px;
+
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+}
+
+[data-theme='dark'] {
+  --canvas-bg:          #0f1117;
+  --canvas-dot:         #1e2130;
+
+  --surface-0:          #0f1117;
+  --surface-1:          #161b27;
+  --surface-2:          #1e2538;
+  --surface-3:          #252d42;
+  --surface-border:     #2a3347;
+
+  --text-primary:       #e8ecf4;
+  --text-secondary:     #8892a4;
+  --text-muted:         #4a5568;
+
+  --accent:             #4f8ef7;
+  --accent-dim:         rgba(79, 142, 247, 0.15);
+
+  --cat-networking:     #4f8ef7;
+  --cat-compute:        #a78bfa;
+  --cat-application:    #34d399;
+  --cat-data:           #fb923c;
+  --cat-security:       #f87171;
+  --cat-observability:  #facc15;
+  --cat-custom:         #94a3b8;
+
+  --node-bg:            #1e2538;
+  --node-border:        #2a3347;
+  --node-border-hover:  #4f8ef7;
+  --node-border-selected: #4f8ef7;
+  --node-shadow-selected: 0 0 0 2px rgba(79, 142, 247, 0.4);
+
+  --edge-color:         #9aa3b5;
+  --edge-color-hover:   #4f8ef7;
+  --edge-animated:      #4f8ef7;
+  --edge-sync:          #2dd4bf;
+  --edge-sync-hover:    #5eead4;
+
+  --minimap-mask:       rgba(15, 17, 23, 0.6);
+}
